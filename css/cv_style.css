@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #929090;
+  }
+
+  .big_container {
+    background-color: burlywood;
+    width: 100%;
+    background-image: url("assets/img/snow-flake3.png");
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(80, 44, 44, 0.3);
+    
+  }
+  
+  h1 {
+    margin: 1em;
+    font-size: 42px;
+    box-shadow: 6px 6px 0.5px green;
+    border-radius: 7px;
+    text-align: right;
+    padding-right: 3em;
+  }
+
+  h1:hover {
+    transform: scale(1.1);
+  }
+  
+  div p {
+    margin: 5px 0;
+    color: #555;
+  }
+
+  #main_top {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: red;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+
+  .personal_info {
+    width: 100%; 
+    color: antiquewhite;
+    margin: 2em auto;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: center;
+    width: 348px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  .col-1 {width: 8.33;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  @media only screen and (max-width: 768px) {
+    /* For Mobile Phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  } 

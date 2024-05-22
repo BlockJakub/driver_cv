@@ -1,0 +1,722 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #c23128;
+}
+.info_tittle {
+    font-family: Helvetica;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+}
+
+
+/*   ====  MAIN _CONTAINER   =======  */
+.main_container {
+    display: block;
+    margin: 1em;
+}
+
+/*   ----------------------   END OF MAIN_CONTAINER  --------------------------  */
+
+/*==============================================================*/
+/*    ===============  START OF ARROW      ====================  */
+.header {
+    background: #c23122;
+
+}
+#arrow {
+    transition: all 1s ease;
+}
+/* Add necessary CSS for the bounce animation */
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1s;
+}
+
+.header>.header_row {
+    display: flex;
+    flex-flow: row;
+    background-image: url("../Mapa_pic_edited.jpg");
+    background-position: center;
+    clip-path: polygon(0% 10%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.col-2>.clip_path_color_img {
+    width: 448px;
+    height: 498px;
+    background-color: yellow;
+}
+
+.header_text>.welcome_tittle {
+    font-size: 54px;
+    color: aquamarine;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 94px;
+}
+
+p.welcome_paragraph {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0 0 268px;
+    width: 522px;
+    color: #fff;
+}
+
+/*  ----------------------------  END OF ARROW  ------------------------------------  */
+
+/*   =============================================================== */
+/*   ================   PERSON_DETAILS   -- BOX_1  =================  */
+
+.main_row {
+    display: flex;
+    margin: 2em auto;
+}
+
+.person_details>.box_1 {
+    display: flex;
+    flex-flow: column;
+    margin-top: 1em;
+    max-width: 12em;
+    text-align: center;
+    background-color: gray;
+}
+
+img .person_img {
+    width: 268px;
+    border-radius: 50%;
+}
+
+.info_tittle {
+    font-size: 43px;
+    color: aquamarine;
+}
+
+.person_details ul li {
+    background-color: rgba(221, 142, 142, 0.466);
+    list-style-type: none;
+    margin-bottom: 0.5em;
+    height: 1.5em;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* ------------------------  END OF PERSON_DETAILS  -- BOX_1   --------------  */
+
+
+/* =====================================================================  */
+/*  ================  START wh_col = work history_ column,  BOX_2  =======  */
+.box_2>.wh_col {
+    font-size: 24px;
+}
+
+/*  -----------------  END OF wh_col +  BOX_2 ----------------------------  */
+
+/* ===========================================================================  */
+/*  ============ START    row_hobby   ===========================  */
+div.row_hobby {
+    display: flex;
+    flex-flow: row;
+}
+
+.row_hobby>.col-sm-4 {
+    background-color: #505050;
+    display: block;
+    padding: 0.7em;
+    border-radius: 4px;
+    box-shadow: 7px 7px 1px rgba(112, 9, 9, 0.966);
+}
+
+/*  ----------------------------- END   row_hobby --------------------------- */
+
+/*  =============================================================================== */
+/*  =======================  START  FOOTER   ================================= */
+div.footer {
+    width: 100%;
+    height: 320px;
+    margin: 2em auto;
+    background-image: url("../map_edin_edit_3.png");
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    margin: 1em;
+}
+
+/* --------------------------  END FOOTER  ----------------------------------- */
+
+.col-1 {
+    width: 8.33;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*  =================================================================================  */
+/*   ==========  START MEDIA SCRENS  398px  =================================   */
+@media only screen and (max-width: 398px) {
+
+    /* For Mobile Phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    * {
+        font-family: 'Arial' 'consolas';
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        width: fit-content;
+    }
+
+
+    .col-2 {
+        width: 7.66%;
+    }
+    .col-3 {
+        width: 23%;
+    }
+    .col-4 {
+        width: 30.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-8 {
+        width: 33.66%;
+    }
+    .col-10 {
+        width: 43.33%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+
+    /*  ===========  HEADER MOBILE  ========== */
+    .main_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        min-width: 328px;
+        align-items: center;
+        height: 100%;
+    }
+
+    #arrow {
+        transition: all 1s ease;
+    }
+
+    div.top_h {
+        width: 328px;
+        text-align: center;
+        background: pink;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+    .header {
+        min-width: 328px;
+    }
+
+    .header>.header_row {
+        display: inline-block;
+        min-width: 318px;
+        height: 498px;
+        background-image: url("../map_bg_edit_1.jpg");
+        clip-path: polygon(0% 35%, 50% 100%, 100% 35%, 75% 35%, 75% 0%, 25% 0%, 25% 35%);
+        background-position: right;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    div.header_text>.welcome_tittle {
+        word-spacing: 7px;
+        font-size: 32px;
+        color: aquamarine;
+        text-align: center;
+        margin-top: 48px;
+        margin-left: -10px;
+    }
+
+    .col-10>.welcome_paragraph {
+        width: 184px;
+        line-height: 15px;
+        font-size: 16px;
+        font-weight: 200;
+        margin: 12px 0 0 -12px;
+        text-align: center;
+        color: #fff;
+    }
+
+    /* ==================    THE END OF HEADER   ======== */
+
+    .main_row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        width: 100%;
+        max-height: 100%;
+
+    }
+
+    div>.person_details {
+        display: block;
+        width: 100%;
+    }
+
+    div.box_1>.person_img {
+        border-radius: 40%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .person_details>.box_1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        min-width: 100%;
+        height: auto;
+        background-color: orange;
+    }
+
+    .wh_col {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        margin-top: 1em;
+        font-size: 14px;
+        text-align: center;
+        background-color: white;
+    }
+
+    div.box_2 {
+        display: block;
+        margin: 1em;
+        background-color: red;
+        padding: 1em;
+    }
+
+    .info_tittle {
+        margin: 0.4em auto;
+    }
+
+    div.row_hobby {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        height: 100%;
+        background-color: green;
+        padding: 1em;
+    }
+
+    .col-4 {
+        display: block;
+        width: 100%;
+    }
+}
+/* --------------------------  END OF MEDIA SCREEN 418px  ------------------  */
+
+
+/* ================================================================ */
+/* =================== MEDIA SCREEN 568px   =======================  */
+@media only screen and (min-width: 568px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #c23128;
+    }
+    .info_tittle {
+        font-family: Helvetica;
+    }
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 21px;
+    }
+
+
+    /*   ====  MAIN _CONTAINER   =======  */
+    .main_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        width: fit-content;
+        height: 50%;
+        margin: 1em auto;
+        background-color: orangered;
+    }
+
+    /*   ----------------------   END OF MAIN_CONTAINER  --------------------------  */
+
+    /*==============================================================*/
+    /*    ===============  START OF ARROW      ====================  */
+    div>.header {
+        background: rgba(112, 9, 9, 0.966);
+        width: 100%;
+        height: auto;
+    }
+
+    .header>.header_row {
+        display: flex;
+        flex-flow: row;
+        background-image: url("../map_bg_edit_1.jpg");
+        background-position: center;
+        clip-path: polygon(0% 10%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    .col-2>.clip_path_color_img {
+        width: 548px;
+        height: 598px;
+        background-color: yellow;
+    }
+
+    .header_text>.welcome_tittle {
+        font-size: 54px;
+        color: aquamarine;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 294px;
+    }
+
+    p.welcome_paragraph {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px 0 0 268px;
+        width: 522px;
+        color: #fff;
+    }
+
+    /*  ----------------------------  END OF ARROW  ------------------------------------  */
+
+    /*   =============================================================== */
+    /*   ================   PERSON_DETAILS   -- BOX_1  =================  */
+
+    .main_row {
+        display: flex;
+        margin: 2em auto;
+    }
+
+    .person_details>.box_1 {
+        display: flex;
+        flex-flow: column;
+        margin-top: 1em;
+        max-width: 12em;
+        text-align: center;
+        background-color: gray;
+    }
+
+    img .person_img {
+        width: 268px;
+        border-radius: 50%;
+    }
+
+    .info_tittle {
+        font-size: 40px;
+        color: aquamarine;
+    }
+
+    .person_details ul li {
+        background-color: rgba(221, 142, 142, 0.466);
+        list-style-type: none;
+        margin-bottom: 0.5em;
+        height: 1.5em;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+
+    /* ------------------------  END OF PERSON_DETAILS  -- BOX_1   --------------  */
+
+
+    /* =====================================================================  */
+    /*  ================  START wh_col = work history_ column,  BOX_2  =======  */
+    .box_2>.wh_col {
+        font-size: 24px;
+    }
+
+    /*  -----------------  END OF wh_col +  BOX_2 ----------------------------  */
+
+    /* ===========================================================================  */
+    /*  ============ START    row_hobby   ===========================  */
+    div.row_hobby {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .row_hobby>.col-sm-4 {
+        background-color: #505050;
+        display: block;
+        padding: 0.7em;
+        border-radius: 4px;
+        box-shadow: 7px 7px 1px rgba(112, 9, 9, 0.966);
+    }
+
+    /*  ----------------------------- END   row_hobby --------------------------- */
+
+    /*  =============================================================================== */
+    /*  =======================  START  FOOTER   ================================= */
+    div.footer {
+        width: 100%;
+        height: 320px;
+        margin: 2em auto;
+        background-image: url("../map_edin_edit_3.png");
+        background-size: cover;
+        background-position: bottom;
+        text-align: center;
+        margin: 1em;
+    }
+
+}
+
+
+/* ================================================================================ */
+/* =========================== MEDIA SCREEN 569px  ===============================*/
+@media only screen and (min-width: 568px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #c23128;
+    }
+
+    .info_tittle {
+        font-family: Helvetica;
+    }
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 21px;
+    }
+
+
+
+    /*   ====  MAIN _CONTAINER   =======  */
+    .main_container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column;
+        width: fit-content;
+        height: 50%;
+        margin: 1em auto;
+        background-color: orangered;
+    }
+
+    /*   ----------------------   END OF MAIN_CONTAINER  --------------------------  */
+
+    /*==============================================================*/
+    /*    ===============  START OF ARROW      ====================  */
+    div>.header {
+        background: rgba(112, 9, 9, 0.966);
+        width: 100%;
+        height: auto;
+    }
+
+    .header>.header_row {
+        display: flex;
+        flex-flow: row;
+        background-image: url("../map_bg_edit_1.jpg");
+        background-position: center;
+        clip-path: polygon(0% 10%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
+
+    .col-2>.clip_path_color_img {
+        width: 548px;
+        height: 598px;
+        background-color: yellow;
+    }
+
+    .header_text>.welcome_tittle {
+        font-size: 54px;
+        color: aquamarine;
+        text-align: center;
+        margin-top: 150px;
+        margin-left: 294px;
+    }
+
+    p.welcome_paragraph {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px 0 0 268px;
+        width: 522px;
+        color: #fff;
+    }
+
+    /*  ----------------------------  END OF ARROW  ------------------------------------  */
+
+    /*   =============================================================== */
+    /*   ================   PERSON_DETAILS   -- BOX_1  =================  */
+
+    .main_row {
+        display: flex;
+        margin: 2em auto;
+    }
+
+    .person_details>.box_1 {
+        display: flex;
+        flex-flow: column;
+        margin-top: 1em;
+        max-width: 12em;
+        text-align: center;
+        background-color: gray;
+    }
+
+    img .person_img {
+        width: 268px;
+        border-radius: 50%;
+    }
+
+    .info_tittle {
+        font-size: 40px;
+        color: aquamarine;
+    }
+
+    .person_details ul li {
+        background-color: rgba(221, 142, 142, 0.466);
+        list-style-type: none;
+        margin-bottom: 0.5em;
+        height: 1.5em;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+
+    /* ------------------------  END OF PERSON_DETAILS  -- BOX_1   --------------  */
+
+
+    /* =====================================================================  */
+    /*  ================  START wh_col = work history_ column,  BOX_2  =======  */
+    .box_2>.wh_col {
+        font-size: 24px;
+    }
+
+    /*  -----------------  END OF wh_col +  BOX_2 ----------------------------  */
+
+    /* ===========================================================================  */
+    /*  ============ START    row_hobby   ===========================  */
+    div.row_hobby {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .row_hobby>.col-sm-4 {
+        background-color: #505050;
+        display: block;
+        padding: 0.7em;
+        border-radius: 4px;
+        box-shadow: 7px 7px 1px rgba(112, 9, 9, 0.966);
+    }
+
+    /*  ----------------------------- END   row_hobby --------------------------- */
+
+    /*  =============================================================================== */
+    /*  =======================  START  FOOTER   ================================= */
+    div.footer {
+        width: 100%;
+        height: 320px;
+        margin: 2em auto;
+        background-image: url("../map_edin_edit_3.png");
+        background-size: cover;
+        background-position: bottom;
+        text-align: center;
+        margin: 1em;
+    }
+
+}
